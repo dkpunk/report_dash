@@ -1,0 +1,78 @@
+import plotly
+import plotly.graph_objs as go
+import sys
+import json
+import os
+from datetime import datetime
+from dateutil.parser import parse
+cobname=sys.argv[1]
+column_number=sys.argv[2]
+def get():
+  stdin,stdout = os.popen2("cat /var/www/html/SO/SO/ToolOpsDashBoard/RETINS/MQ_scripts/PROD_DASH/Audit_prod_dashboard.csv | grep "+cobname+" | tail -n 500 | cut -d, -f1,"+column_number)
+  stdin.close()
+  lines = stdout.readlines(); stdout.close()
+  return lines
+outlist=get()
+plot_dict1=[]
+plot_dict1.append(["time","mq depth"])
+for element in outlist:
+	temparr1=parse(element[0:28])
+	(y, m, d, h, min, sec, wd, yd, i)=temparr1.timetuple()
+	date1="{0}-{1}-20{2} {3}:{4}".format(d,m,y,h,min)
+	#print date1	
+	temparr2=element.split(",")
+	temparr3=str(temparr1.strftime("%y %X"))
+	plot_dict1.append([temparr3,int(temparr2[1])])
+'''xlist=[]
+ylist=[]
+plot_dict2=sorted(plot_dict,key=plot_dict.get)
+print plot_dict2
+#xlist=tuple(plot_dict.keys())
+#ylist=tuple(plot_dict.values())
+import matplotlib
+matplotlib.use('Agg')
+import matplotlib.pyplot as plt
+fig=plt.figure()
+ax=fig.add_subplot(111)
+ax.plot(xlist, ylist)
+fig.savefig(cobname+'.png')   # save the figure to file
+'''
+print '''
+<html>
+  <head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+      google.charts.load('current', {'packages':['corechart']});
+      google.charts.setOnLoadCallback(drawChart);
+
+      function drawChart() {
+      var data = google.visualization.arrayToDataTable(
+'''
+print plot_dict1
+print '''
+        );
+
+        var options = {
+          title: 'Mq Performance',
+          curveType: 'function',
+          legend: { position: 'bottom' }
+        };
+
+        var chart = new google.visualization.LineChart(document.getElementById('curve_chart'));
+
+        chart.draw(data, options);
+      }
+    </script>
+  </head>
+  <body>
+    <div id="curve_chart" style="width: 900px; height: 500px"></div>
+  </body>
+</html>
+'''
+#plt.close(fig)
+'''
+plotly.offline.plot({
+    "data": [go.Scatter(x=xlist,y=ylist)],
+    "layout": go.Layout(title="MQ Trends of"+cobname)
+}, auto_open=True,filename=cobname+".html")
+'''

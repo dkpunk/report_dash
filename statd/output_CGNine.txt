@@ -1,0 +1,5 @@
+      1 <cobrandId>10005620
+      1 <cobrandId>10005628
+      4 <cobrandId>10005780
+      1 <cobrandId>10005960
+      3 <cobrandId>10013356

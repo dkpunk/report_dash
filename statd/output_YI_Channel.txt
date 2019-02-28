@@ -1,0 +1,89 @@
+    137 <cobrandId>20510018556
+      1 <cobrandId>2910020264
+     96 <cobrandId>30610018556
+      3 <cobrandId>33410018556
+      1 <cobrandId>33910018556
+      8 <cobrandId>36210018556
+      2 <cobrandId>36610018556
+      1 <cobrandId>4310020264
+      1 <cobrandId>10018808
+      1 <cobrandId>1510020264
+      1 <cobrandId>19710018556
+     31 <cobrandId>25910018556
+      4 <cobrandId>29610018556
+      4 <cobrandId>30610018556
+      6 <cobrandId>31810018556
+     15 <cobrandId>33410018556
+     25 <cobrandId>33710018556
+     17 <cobrandId>37410018556
+     10 <cobrandId>4910018808
+      3 <cobrandId>9010018556
+      1 <cobrandId>10018808
+      1 <cobrandId>1410019076
+     89 <cobrandId>20510018556
+      1 <cobrandId>20710018556
+      9 <cobrandId>24410018556
+      3 <cobrandId>29610018556
+      4 <cobrandId>31810018556
+      1 <cobrandId>33410018556
+      6 <cobrandId>37410018556
+      1 <cobrandId>42110018556
+      1 <cobrandId>42410018556
+      1 <cobrandId>6210018556
+    137 <cobrandId>20510018556
+      1 <cobrandId>2910020264
+     96 <cobrandId>30610018556
+      3 <cobrandId>33410018556
+      1 <cobrandId>33910018556
+      8 <cobrandId>36210018556
+      2 <cobrandId>36610018556
+      1 <cobrandId>4310020264
+      1 <cobrandId>10018808
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
+ <cobrandId
